@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.uy.mediaplayer.MainActivity">
+    <TextView
+        android:background="#b3ebf1"
+        android:textColor="#000"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_marginBottom="20dp"
+        android:textSize="24sp"
+        android:text="Tên bài hát"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:id="@+id/tvTenBaiHat" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:layout_weight="7.5"
+        android:layout_width="match_parent"
+        android:layout_height="0px">
+        <LinearLayout
+            android:layout_weight="9.5"
+            android:layout_width="match_parent"
+            android:layout_height="0px">
+            <ImageView
+                android:id="@+id/imgCD"
+                android:src="@drawable/cd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="0.5"
+            android:layout_marginRight="10px"
+            android:layout_marginLeft="10px"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/tvTGBaiHat"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:text="00:00"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0px"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/tvTGTong"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom|right"
+                android:text="00:00"
+                android:textSize="22sp" />
+        </LinearLayout>
+        <SeekBar
+            android:id="@+id/sbTime"
+            android:background="#b3ebf1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#dad9d9"
+        android:orientation="horizontal"
+        android:layout_weight="1.5"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_gravity="bottom">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:src="@drawable/backx86"
+            android:layout_weight="1"
+            android:layout_width="0px"
+            android:layout_height="match_parent" />
+        <ImageButton
+            android:id="@+id/btnPlay"
+            android:src="@drawable/playx86"
+            android:layout_weight="1"
+            android:layout_width="0px"
+            android:layout_height="match_parent" />
+        <ImageButton
+            android:id="@+id/btnStop"
+            android:src="@drawable/stopx86"
+            android:layout_weight="1"
+            android:layout_width="0px"
+            android:layout_height="match_parent" />
+        <ImageButton
+            android:id="@+id/btnNext"
+            android:src="@drawable/next1x86"
+            android:layout_weight="1"
+            android:layout_width="0px"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</LinearLayout>
